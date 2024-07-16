@@ -2,7 +2,7 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
       - main
 
 jobs:
@@ -12,17 +12,21 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      
+      - name: Location Pull
+        run:  pwd
+
       - name: Git Pull
-        run: cd /home/ec2-user/continuous-integration- && git pull
+        run:  git pull     
 
       - name: Build Docker Image
-        run: sudo docker build -t local_image:0.1 /home/ec2-user/continuous-integration-/app
+        run: sudo docker build -t ci-node-app:0.2 /home/ec2-user/continuous-integration-/app
 
       - name: List Docker Images
         run: sudo docker images
       
       - name: Run Docker Container
-        run: sudo docker run -d --name local_container -p 9003:9001 local_image:0.1
+        run: sudo docker run -d --name ci-node-app-02 -p 9003:9001 ci-node-app:0.2
 
       - name: List Docker Processes
         run: sudo docker ps
