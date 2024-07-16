@@ -1,9 +1,9 @@
 ﻿{
-  "agentId": 2,
+  "agentId": 4,
   "agentName": "local-runner",
   "poolId": 1,
   "poolName": "Default",
   "serverUrl": "https://pipelinesghubeus7.actions.githubusercontent.com/R4afRCrXSTsZ6lYMCS8JH95c9OPy1y1vD4PYGVlqxFPmLDOlGG/",
   "gitHubUrl": "https://github.com/Gpsound/Continuous-integration-",
-  "workFolder": "_work"
+  "workFolder": "local_work"
 }
