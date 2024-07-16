@@ -6,25 +6,24 @@ on:
       - main
 
 jobs:
-
-  build Local Image:
-
+  build-Local-Image: # Use hyphens instead of spaces in job names
     runs-on: self-hosted
 
     steps:
-      
       - name: Location Pull
-        run:  pwd
+        run: pwd
 
       - name: Git Pull
-        run:  git pull     
+        run: git pull
+        # Ensure the repository is pulled from the correct directory, if necessary:
+        # working-directory: /path/to/repository
 
       - name: Build Docker Image
-        run: sudo docker build -t ci-node-app:0.2 /home/ec2-user/continuous-integration-/app
+        run: sudo docker build -t ci-node-app:0.2 /d/LAB01/CI/Continuous-integration-/app
 
       - name: List Docker Images
         run: sudo docker images
-      
+
       - name: Run Docker Container
         run: sudo docker run -d --name ci-node-app-02 -p 9003:9001 ci-node-app:0.2
 
