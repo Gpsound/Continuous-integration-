@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: Git Pull
-        run: cd /home/ec2-user/continuous-integration && git pull
+        run: cd /home/ec2-user/continuous-integration- && git pull
 
       - name: Build Docker Image
-        run: sudo docker build -t local_image:0.1 /home/ec2-user/continuous-integration/app
+        run: sudo docker build -t local_image:0.1 /home/ec2-user/continuous-integration-/app
 
       - name: List Docker Images
         run: sudo docker images
