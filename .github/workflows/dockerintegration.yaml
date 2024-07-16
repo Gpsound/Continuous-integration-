@@ -19,13 +19,13 @@ jobs:
         # working-directory: /path/to/repository
 
       - name: Build Docker Image
-        run: sudo docker build -t ci-node-app:0.2 /d/LAB01/CI/Continuous-integration-/app
+        run:  docker build -t ci-node-app:0.2 /d/LAB01/CI/Continuous-integration-/app
 
       - name: List Docker Images
-        run: sudo docker images
+        run:  docker images
 
       - name: Run Docker Container
-        run: sudo docker run -d --name ci-node-app-02 -p 9003:9001 ci-node-app:0.2
+        run:  docker run -d --name ci-node-app-02 -p 9003:9001 ci-node-app:0.2
 
       - name: List Docker Processes
-        run: sudo docker ps
+        run:  docker ps
