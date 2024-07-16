@@ -333,3 +333,56 @@
 [2024-07-16 08:03:06Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
 [2024-07-16 08:03:56Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
 [2024-07-16 08:04:47Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2024-07-16 08:05:39Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2024-07-16 08:05:49Z INFO MessageListener] Message '1178514140446510696' received from session 'abf23e90-ca3f-46f7-a1f6-667825850fcd'.
+[2024-07-16 08:05:49Z INFO ConfigurationStore] HasCredentials()
+[2024-07-16 08:05:49Z INFO ConfigurationStore] stored True
+[2024-07-16 08:05:49Z INFO CredentialManager] GetCredentialProvider
+[2024-07-16 08:05:49Z INFO CredentialManager] Creating type OAuth
+[2024-07-16 08:05:49Z INFO CredentialManager] Creating credential type: OAuth
+[2024-07-16 08:05:49Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\LAB01\CI\Continuous-integration-\actions-runner\.credentials_rsaparams
+[2024-07-16 08:05:49Z INFO ActionsRunServer] EstablishVssConnection
+[2024-07-16 08:05:49Z INFO ActionsRunServer] Establish connection with 100 seconds timeout.
+[2024-07-16 08:05:49Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-07-16 08:05:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-07-16 08:05:50Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\LAB01\CI\Continuous-integration-\actions-runner\.credentials_rsaparams
+[2024-07-16 08:05:50Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\LAB01\CI\Continuous-integration-\actions-runner\.credentials_rsaparams
+[2024-07-16 08:05:50Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2024-07-16 08:05:50Z INFO JobDispatcher] Job request 5 for plan c6d1abfd-2ec9-453e-a4c0-84169f120997 job 7d6aaeeb-4779-5c2b-213a-5ba7bd60d622 received.
+[2024-07-16 08:05:50Z INFO JobDispatcher] Pull OrchestrationId c6d1abfd-2ec9-453e-a4c0-84169f120997.build-local-image.__default from JWT claims
+[2024-07-16 08:05:50Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-07-16 08:05:50Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-07-16 08:05:50Z INFO JobDispatcher] Job request 7d6aaeeb-4779-5c2b-213a-5ba7bd60d622 processed succeed.
+[2024-07-16 08:05:50Z INFO Terminal] WRITE LINE: 2024-07-16 08:05:50Z: Running job: build-Local-Image
+[2024-07-16 08:05:50Z INFO JobDispatcher] Start renew job request 5 for job 7d6aaeeb-4779-5c2b-213a-5ba7bd60d622.
+[2024-07-16 08:05:51Z INFO JobDispatcher] Successfully renew job request 5, job is valid till 16/07/2024 08:15:50 AM
+[2024-07-16 08:05:51Z INFO HostContext] Well known directory 'Bin': 'D:\LAB01\CI\Continuous-integration-\actions-runner\bin'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper] Starting process:
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   File name: 'D:\LAB01\CI\Continuous-integration-\actions-runner\bin\Runner.Worker.exe'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2592 2604'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   Working directory: 'D:\LAB01\CI\Continuous-integration-\actions-runner\bin'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-07-16 08:05:51Z INFO ProcessInvokerWrapper] Process started with process id 23832, waiting for process exit.
+[2024-07-16 08:05:51Z INFO JobDispatcher] Send job request message to worker for job 7d6aaeeb-4779-5c2b-213a-5ba7bd60d622.
+[2024-07-16 08:05:51Z INFO ProcessChannel] Sending message of length 24705, with hash '5ce77bac1c27a970d5f7097933c98bc84404ee71fa7c3964b6a620f85a85c7ef'
+[2024-07-16 08:05:51Z INFO JobNotification] Entering JobStarted Notification
+[2024-07-16 08:05:51Z INFO JobNotification] Entering StartMonitor
+[2024-07-16 08:05:51Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
+[2024-07-16 08:06:20Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-16 08:06:20Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-07-16 08:06:20Z INFO ProcessInvokerWrapper] Finished process 23832 with exit code 100, and elapsed time 00:00:29.7148893.
+[2024-07-16 08:06:20Z INFO JobDispatcher] Worker finished for job 7d6aaeeb-4779-5c2b-213a-5ba7bd60d622. Code: 100
+[2024-07-16 08:06:20Z INFO JobDispatcher] finish job request for job 7d6aaeeb-4779-5c2b-213a-5ba7bd60d622 with result: Succeeded
+[2024-07-16 08:06:20Z INFO Terminal] WRITE LINE: 2024-07-16 08:06:20Z: Job build-Local-Image completed with result: Succeeded
+[2024-07-16 08:06:20Z INFO JobDispatcher] Stop renew job request for job 7d6aaeeb-4779-5c2b-213a-5ba7bd60d622.
+[2024-07-16 08:06:20Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 5.
+[2024-07-16 08:06:20Z INFO JobNotification] Entering JobCompleted Notification
+[2024-07-16 08:06:20Z INFO JobNotification] Entering EndMonitor
+[2024-07-16 08:06:20Z INFO MessageListener] Received job status event. JobState: Online
+[2024-07-16 08:06:42Z INFO MessageListener] BrokerMigration message received. Polling Broker for messages...
